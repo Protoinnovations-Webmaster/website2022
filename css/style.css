@@ -8,6 +8,22 @@ Licence under Creative Commons Attribution 3.0
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
+
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+video {
+    width: 80%;
+    height: auto;
+  }
 .lft {
     position: relative;
     display: inline-block;
