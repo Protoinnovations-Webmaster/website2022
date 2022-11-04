@@ -42,6 +42,11 @@ video {
     width: 5%;
     float: right;
 }
+#logo3 {
+    /* margin: 50px 0px 0px 10px; */
+    width: 20%;
+    /* float: ; */
+}
 /* .logo {
     float: left;
     height: 10px;
@@ -81,6 +86,7 @@ a, a:hover, a:active {
 .clearfix:before,
 .clearfix:after {
     content: '\0020';
+    left: -100px;
     display: block;
     overflow: hidden;
     visibility: hidden;
@@ -1567,6 +1573,7 @@ transition: all .3s;
     float: none;
     z-index: 2;
     position: relative;
+    left: -22px;
 }
 
 #filters ul li {
@@ -2141,6 +2148,7 @@ div.mc-image {
     position:relative;
     margin-bottom:100px;
     z-index:1;
+    left:-18px;
 }
 
 .timeline:before{
@@ -2203,7 +2211,7 @@ div.mc-image {
 }
 
 .news-item:hover .news-content {
-    background: #000000;
+    background: gray;
     color:#fff;
 }
 
