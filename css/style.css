@@ -12,6 +12,15 @@ Licence under Creative Commons Attribution 3.0
 .column {
     float: left;
     width: 33.33%;
+    /* float: left; */
+    /* width: 50%; */
+    /* padding: 10px;
+    height: 300px */
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }
   
   /* Clear floats after the columns */
@@ -86,7 +95,7 @@ a, a:hover, a:active {
 .clearfix:before,
 .clearfix:after {
     content: '\0020';
-    left: -100px;
+    /* left: -100px; */
     display: block;
     overflow: hidden;
     visibility: hidden;
@@ -196,7 +205,7 @@ font-size: 50px;
 	min-height: 100%;
     /* max-height: 500px; */
 	max-width: 100%;
-	opacity: 0.8;
+	opacity: 0.8
 }
 
 .grid figure figcaption {
@@ -331,7 +340,7 @@ figure.effect-oscar:hover img {
 ---------------------------------*/
 body {
     /* background: red; */
-    background-image: url("../img/space3.jpg");
+    background-image: url("../img/space3.jpg"); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -898,6 +907,14 @@ a.contact_btn:hover {
     width: auto !important;
 }
 
+/* @media screen and (max-width: 768px) {
+    .portfolioContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+     }
+} */
+
+
 .Portfolio-box {
     text-align: center;
     width: 350px;
@@ -925,6 +942,8 @@ a.contact_btn:hover {
 img {
     max-width: 100%;
 }
+
+
 
 /* no transition on .isotope container */
 
@@ -1573,9 +1592,14 @@ transition: all .3s;
     float: none;
     z-index: 2;
     position: relative;
-    left: -22px;
+    left: -20px;
 }
-
+@media screen and (max-width: 600px) {
+    #filters {
+      /* width: 100%; */
+      left: 0px;
+    }
+  }
 #filters ul li {
     display: inline-block;
     margin: 0 10px;
@@ -1660,8 +1684,13 @@ padding:80px 0 60px;
 
 #portfolio_wrapper {
     /* padding: 0; */
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+    max-width: 3200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* left: 1000px;
+    right: 1000px; */
     /* height: 500px !important; */
     /* height: 100%; */
     /* margin-left: auto;
@@ -1680,7 +1709,7 @@ padding:80px 0 60px;
     position: relative;
     /* max-width:100%;
     max-height:100%; */
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .portfolio-item {
@@ -1704,7 +1733,16 @@ padding:80px 0 60px;
     height: auto;
     object-fit: cover;
 }
-
+@media screen and (max-width: 600px) {
+    .portfolio-item .portfolio_img img{
+        /* left:0px; */
+        /* padding-top: -10%; */
+        /* top: auto; */
+        width: auto;
+        height: 100%;
+        object-fit: cover !important;
+    }
+  }
 .portfolio-item:hover .item_overlay {
     opacity: 1;
     transition: all 0.4s ease 0s;
@@ -2150,7 +2188,11 @@ div.mc-image {
     z-index:1;
     left:-18px;
 }
-
+@media screen and (max-width: 600px) {
+    .timeline {
+        left:0px;
+    }
+  }
 .timeline:before{
     display:block;
     content:"";
@@ -2197,7 +2239,11 @@ div.mc-image {
     float:right;
     margin-top:40px;
 }
-
+@media screen and (max-width: 600px) {
+    .news-item.right {
+      width: 100%;
+    }
+  }
 .news-item .news-content {
     margin:20px 30px 0 0;
     position:relative;
@@ -2293,9 +2339,16 @@ div.mc-image {
     margin:0;
     font-size: 38px;
     font-weight: 400;
-    line-height:48px;
+    line-height:25px;
 }
-
+@media screen and (max-width: 600px) {
+    .news-content .date p {
+        margin:0;
+        font-size: 24px;
+        font-weight: 400;
+        line-height:40px;
+    }
+  }
 .news-content .date small{
     margin:0;
     font-size:26px;
@@ -2305,12 +2358,20 @@ div.mc-image {
 
 .news-content .news-title{
     font-size:24px;
-    font-weight:300;
+    font-weight:30;
     text-align: left;
     margin-bottom: 4px;
     color: #FFFFFF;
 }
-
+@media screen and (max-width: 600px) {
+    .news-content .news-title {
+        font-size:18px !important;
+        font-weight:30;
+        text-align: left;
+        margin-bottom: 4px;
+        color: #FFFFFF;
+    }
+  }
 .news-content p{
     font-size:16px;
     line-height:24px;
@@ -2329,7 +2390,11 @@ div.mc-image {
     color:rgb(255, 153, 0, 1);
     line-height:24px;
 }
-
+@media screen and (max-width: 600px) {
+    .news-content .read-more {
+        font-size:10px !important;
+    }
+  }
 .news-item:hover .news-content .read-more,
 .news-item:hover .news-content .read-more:hover,
 .news-item:hover .news-content .read-more:active,
