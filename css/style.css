@@ -365,7 +365,21 @@ body {
     color: #888888;
     margin: 0;
 }
-
+@media screen and (max-width: 600px) {
+    body {
+        /* background: red; */
+        background-image: url("../img/space3.jpg"); 
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        /* background-size:cover; */
+        background-size: 100vmax 100vmax;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #888888;
+        margin: 0;
+    }
+}
 h2 {
     font-size: 30px;
     color: #222222;
